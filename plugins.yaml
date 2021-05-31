@@ -1,0 +1,51 @@
+approve:
+- lgtm_acts_as_approve: true
+  repos:
+    - linuxsuren-bot
+  require_self_approval: true
+cat: {}
+cherry_pick_unapproved: {}
+config_updater:
+  gzip: false
+  maps: {}
+external_plugins: {}
+heart: {}
+label:
+  additional_labels:
+    - tide/squash
+    - ready
+owners: {}
+plugins:
+  linuxsuren-bot:
+    - approve
+    - assign
+    - cat
+    - dog
+    - help
+    - hold
+    - label
+    - lgtm
+    - lifecycle
+    - override
+    - pony
+    - shrug
+    - size
+    - skip
+    - trigger
+    - wip
+    - yuks
+requiresig: {}
+sigmention: {}
+size:
+  l: 0
+  m: 0
+  s: 0
+  xl: 0
+  xxl: 0
+triggers: []
+# Example triggers configuration:
+# - repos:
+#     - org/repo
+#   trusted_org: org
+welcome:
+- message_template: Welcome
