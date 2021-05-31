@@ -1,0 +1,41 @@
+branch-protection:
+  orgs: {}
+  protect-tested-repos: true
+github:
+  LinkURL: null
+owners_dir_excludes:
+  default: null
+  repos: null
+plank: {}
+pod_namespace: lighthouse
+postsubmits: {}
+presubmits:
+  linuxsuren-bot/learn-pipeline-java:
+    - agent: jenkins
+      name: e2e-test
+    - agent: jenkins
+      name: demo
+prowjob_namespace: lighthouse
+push_gateway:
+  serve_metrics: false
+tide:
+  squash_label: tide/squash
+  context_options:
+    from-branch-protection: true
+    required-if-present-contexts: []
+    skip-unknown-contexts: false
+  merge_method: {}
+  queries:
+    - labels:
+      - approved
+      - lgtm
+      - ready
+      missingLabels:
+      - do-not-merge
+      - do-not-merge/hold
+      - do-not-merge/work-in-progress
+      - needs-ok-to-test
+      orgs:
+      - linuxsuren-bot
+jenkinses:
+- {}
