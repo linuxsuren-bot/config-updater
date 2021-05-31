@@ -52,7 +52,7 @@ size:
   m: 0
   s: 0
   xl: 0
-  xxl: 0
+  xxl: 110
 triggers: []
 # Example triggers configuration:
 # - repos:
