@@ -50,7 +50,7 @@ sigmention: {}
 size:
   l: 0
   m: 0
-  s: 0
+  s: 10
   xl: 0
   xxl: 110
 triggers: []
