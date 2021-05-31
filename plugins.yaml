@@ -43,6 +43,8 @@ plugins:
     - trigger
     - wip
     - yuks
+  linuxsuren-bot/config-updater:
+    - config-updater
 requiresig: {}
 sigmention: {}
 size:
