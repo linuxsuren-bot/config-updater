@@ -49,8 +49,8 @@ requiresig: {}
 sigmention: {}
 size:
   l: 0
-  m: 0
-  s: 10
+  m: 10
+  s: 0
   xl: 80
   xxl: 110
 triggers: []
