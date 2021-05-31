@@ -7,7 +7,16 @@ cat: {}
 cherry_pick_unapproved: {}
 config_updater:
   gzip: false
-  maps: {}
+  maps:
+    plugins.yaml:
+      name: plugins
+      namespace: default
+    config.yaml:
+      name: config
+      namespace: default
+    labels.yaml:
+      name: label-config
+      namespace: default
 external_plugins: {}
 heart: {}
 label:
